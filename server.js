@@ -14,14 +14,22 @@ if (process.env.NODE_ENV === "production") {
 }
 
 //Connect to the Mogno DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/books",
-    {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        useCreateIndex: true,
-        useFindAndModify: false,
-    }
-);
+// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/books",
+//     {
+//         useNewUrlParser: true,
+//         useUnifiedTopology: true,
+//         useCreateIndex: true,
+//         useFindAndModify: false,
+//     }
+// );
+
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/books";
+mongoose.connect(MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false,
+});
 
 // Define API routes here
 app.use(routes);
