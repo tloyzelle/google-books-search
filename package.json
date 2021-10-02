@@ -8,7 +8,8 @@
     "express": "^4.17.1",
     "if-env": "^1.0.4",
     "mongoose": "^6.0.8",
-    "nodemon": "^2.0.13"
+    "nodemon": "^2.0.13",
+    "path": "^0.12.7"
   },
   "devDependencies": {},
   "scripts": {

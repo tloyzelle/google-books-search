@@ -3,6 +3,7 @@ let db = require("../models");
 
 mongoose.connect("mongodb://localhost/books",{
     useNewUrlParser: true,
+    useFindandModify: true,
 });
 
 const bookSeed = [
@@ -14,7 +15,7 @@ const bookSeed = [
         title: "Twilight"
     }
   
-]
+];
 
 db.Book.remove({})
     .then(() => db.Book.collection.insertMany(bookSeed))
@@ -25,4 +26,4 @@ db.Book.remove({})
     .catch(err =>{
         console.error(err);
         process.exit(1);
-    })
+    });
