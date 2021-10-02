@@ -1,7 +1,7 @@
 let mongoose = require("mongoose");
 let db = require("../models");
 
-mongoose.connect("mongodb://localhost/googlebooks",{
+mongoose.connect("mongodb://localhost/books",{
     useNewUrlParser: true,
 });
 
