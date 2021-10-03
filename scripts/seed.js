@@ -3,7 +3,6 @@ let db = require("../models");
 
 mongoose.connect("mongodb://localhost/books",{
     useNewUrlParser: true,
-    useFindandModify: true,
 });
 
 const bookSeed = [
