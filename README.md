@@ -18,7 +18,7 @@ This application allows for a user to search a book through the Google Books API
 
 [Github Repo](https://github.com/tloyzelle/google-books-search)
 
-[Deployed Application]()
+[Deployed Application](https://google-books-search-tloyzelle.herokuapp.com/)
 
 ## Installation
 Run npm i in terminal to install all needed dependencies. 
